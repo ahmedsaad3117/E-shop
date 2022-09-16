@@ -1,5 +1,4 @@
 # Project Demo
-[![Alt text](https://img.youtube.com/vi/lXk14qt2D28/0.jpg)](https://www.youtube.com/watch?v=lXk14qt2D28)
 
 ## Getting Started
 
@@ -11,7 +10,7 @@ NPM / Yarn and Node.js installed
 
 ### Installing
 
-Installing NPM modules on both client and server folders
+Installing NPM modules on both frontend and backend folders
 
 Execute these commands from the project directory
 
@@ -25,13 +24,13 @@ cd server && npm install
 
 ### Running the app
 
-Open a terminal on server directory
+Open a terminal on backend directory
 
 ```
-npm run start:dev
+npm run dev
 ```
 
-and open another terminal on client directory
+and open another terminal on frontend directory
 ```
 npm run start
 ```
