@@ -1,0 +1,24 @@
+.group_cards {
+  background-color: red;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 1em;
+  font-family: "Poppins", sans-serif;
+  margin: 2em;
+  padding: 1em;
+  background-color: black;
+} 
+
+@media (max-width: 800px) {
+  .card {
+    background-color: #fff;
+    border-radius: 1em;
+    font-family: "Poppins", sans-serif;
+    margin: 2em;
+    padding: 1em;
+    background-color: black;
+    flex: 45%;
+  } 
+}
