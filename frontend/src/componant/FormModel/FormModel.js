@@ -35,11 +35,13 @@ const FormModel = ({ _id, name, description, image, listOfReviews }) => {
 
   const addReview = async () => {
     try {
-      await productService.addReviewApi(_id, {
+      const resp = await productService.addReviewApi(_id, {
         reviewerName,
         rating,
         writtenReview,
       });
+
+      return resp.status;
     } catch (err) {
       console.log(err.message);
     }
@@ -48,12 +50,17 @@ const FormModel = ({ _id, name, description, image, listOfReviews }) => {
   };
 
   const submitForm = (event) => {
+    event.preventDefault();
+
     const form = event.currentTarget;
-    if (form.checkValidity() === false) {
-      event.preventDefault();
-    } else {
-      addReview();
+    if (form.checkValidity() === true) {
+      const res = addReview();
+
+      res.then(() => {
+        window.location.reload();
+      });
     }
+    
     setIsVaild(true);
   };
 
