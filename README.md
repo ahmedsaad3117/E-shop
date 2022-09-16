@@ -15,11 +15,11 @@ Installing NPM modules on both frontend and backend folders
 Execute these commands from the project directory
 
 ```
-cd client && npm install
+cd frontend && npm install
 ```
 
 ```
-cd server && npm install
+cd backend && npm install
 ```
 
 ### Running the app
